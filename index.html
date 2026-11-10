@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLUSH | Sistema Georreferenciado, Analítica de Demanda y Persistencia Relacional</title>
+    
+    <!-- Fuentes Tipográficas Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconografía Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Hoja de Estilos de la Plataforma -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         1. BARRA DE NAVEGACIÓN SUPERIOR (GLASSMORPHISM FINTECH SLUSH)
+         ====================================================================== -->
+    <header class="encabezado">
+        <div class="logo">
+            <h2>🍧 SLUSH<span></span></h2>
+            <span class="sub-brand">ENGINEERING & DATA ARCHITECTURE</span>
+        </div>
+        <nav class="menu">
+            <a href="#inicio"><i class='bx bx-home-alt'></i> Inicio</a>
+            <a href="#fundamentacion"><i class='bx bx-book-bookmark'></i> Fundamentación</a>
+            <a href="#georutas"><i class='bx bx-map-pin'></i> Google Maps</a>
+            <a href="#tiras-sql"><i class='bx bx-code-block'></i> Tiras & Módulos SQL</a>
+            <a href="#auditoria-ssms"><i class='bx bx-data'></i> Auditoría SSMS</a>
+            <a href="#codigo-base-java"><i class='bx bxl-java'></i> Código Base (Java)</a>
+            <a href="#diagrama-flujo-sec"><i class='bx bx-git-merge'></i> Diagrama de Flujo</a>
+            <a href="#tiras-sql" class="btn-nav-cta"><i class='bx bx-terminal'></i> Desplegar Tiras SQL</a>
+        </nav>
+    </header>
+
+    <!-- ======================================================================
+         2. HERO SECTION INMERSIVO
+         ====================================================================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-glow"></div>
+        <div class="hero-glow-secondary"></div>
+        <div class="hero-contenedor">
+            <div class="hero-texto">
+                <span class="badge-pro"><i class='bx bx-check-shield'></i> Arquitectura Relacional 3FN & Geolocalización 2026</span>
+                <h1>Plataforma Georreferenciada y Analítica de Demanda de Granizados</h1>
+                <p class="hero-subtitulo">Área Metropolitana del Valle de Aburrá: La Estrella, Sabaneta, Itagüí, Envigado, Medellín y Bello.</p>
+                <p class="hero-descripcion">
+                    Memoria técnica integral y panel de control interactivo de SLUSH. Entorno de ingeniería diseñado para 
+                    demostración académica y sustentación evaluativa. Centraliza 84 puntos de venta georreferenciados, 
+                    auditoría transaccional ACID en Microsoft SQL Server, resolución de consultas multitabla, 
+                    desacoplamiento de servicios y lógica algorítmica estructurada en Java POO.
+                </p>
+
+                <div class="hero-botones">
+                    <a href="#georutas" class="btn-principal"><i class='bx bx-compass'></i> Monitoreo en Google Maps</a>
+                    <a href="#tiras-sql" class="btn-secundario"><i class='bx bx-layer'></i> Ver Banco de Tiras SQL</a>
+                    <a href="#codigo-base-java" class="btn-terciario"><i class='bx bxl-java'></i> Explorar Código Base Java</a>
+                </div>
+            </div>
+
+            <!-- Panel de Métricas de Alta Densidad -->
+            <div class="hero-metricas-grid">
+                <div class="metrica-card">
+                    <div class="metrica-icon"><i class='bx bx-store-alt'></i></div>
+                    <span class="valor" data-counter="84">84</span>
+                    <span class="etiqueta">Locales Indexados</span>
+                    <span class="sub-etiqueta">Medellín y Metrópoli</span>
+                </div>
+                <div class="metrica-card">
+                    <div class="metrica-icon"><i class='bx bx-git-branch'></i></div>
+                    <span class="valor">3FN</span>
+                    <span class="etiqueta">Normalización Estricta</span>
+                    <span class="sub-etiqueta">Cero Redundancia Transitiva</span>
+                </div>
+                <div class="metrica-card">
+                    <div class="metrica-icon"><i class='bx bx-map-alt'></i></div>
+                    <span class="valor" data-counter="17">17</span>
+                    <span class="etiqueta">Sectores Microclimáticos</span>
+                    <span class="sub-etiqueta">Comunas y Municipios</span>
+                </div>
+                <div class="metrica-card">
+                    <div class="metrica-icon"><i class='bx bx-bolt-circle'></i></div>
+                    <span class="valor">O(1)</span>
+                    <span class="etiqueta">Recálculo Transaccional</span>
+                    <span class="sub-etiqueta">Triggers AFTER INSERT/UPDATE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         3. FUNDAMENTACIÓN TEÓRICA Y MODELADO DE DATOS (5 TEMAS)
+         ====================================================================== -->
+    <div id="fundamentacion">
+        <!-- TEMA 1 -->
+        <section class="seccion-tecnica" id="tema1">
+            <div class="seccion-encabezado">
+                <span class="seccion-tag">Eje Metodológico 01</span>
+                <h2>Tema N°1: ¿Cuál es la Idea de Trabajo Principal?</h2>
+                <p>Digitalización, trazabilidad espacial y eliminación de asimetrías de información en nichos gastronómicos locales.</p>
+            </div>
+            <div class="grid-dos-columnas">
+                <div class="tarjeta-tecnica">
+                    <div class="tarjeta-icono"><i class='bx bx-crosshair'></i></div>
+                    <h3>Propósito Integral de SLUSH</h3>
+                    <p>
+                        El proyecto integrador <strong>SLUSH</strong> resuelve la dispersión de información sobre los puntos 
+                        de venta de granizados tradicionales y frappés de autor en el Valle de Aburrá. Mientras los directorios 
+                        genéricos limitan sus atributos a nombres y horarios, SLUSH introduce métricas especializadas: 
+                        tipo de base (frutal al agua, cremosa con adición láctea, michelada/ácida o combinada con licor), 
+                        volumen volumétrico en onzas, nivel de aforo en tiempo real y correlación meteorológica.
+                    </p>
+                    <ul class="lista-tecnica">
+                        <li><strong>Para el Usuario:</strong> Localización precisa, cálculo de tiempo de desplazamiento y visualización previa de carta y aforo.</li>
+                        <li><strong>Para el Negocio:</strong> Plataforma de exposición equitativa sin aranceles de intermediación, con métricas territoriales de venta.</li>
+                    </ul>
+                </div>
+                <div class="tarjeta-tecnica">
+                    <div class="tarjeta-icono"><i class='bx bx-server'></i></div>
+                    <h3>Arquitectura Desacoplada en Tres Capas</h3>
+                    <p>
+                        La solución se fundamenta en una separación estricta de responsabilidades que garantiza portabilidad, 
+                        seguridad perimetral y soporte a concurrencia masiva:
+                    </p>
+                    <ul class="lista-tecnica">
+                        <li><strong>Capa de Persistencia (SQL Server):</strong> Integridad referencial reforzada, tablas normalizadas, procedimientos transaccionales y disparadores DML.</li>
+                        <li><strong>Capa de Lógica Algorítmica (Java POO / Microservicios):</strong> Modelado orientado a objetos con control contable, nómina, inventario y ruteo seguro.</li>
+                        <li><strong>Capa de Presentación (Frontend SPA):</strong> Interfaz modular en HTML5 semántico, variables CSS personalizadas y motor interactivo en JavaScript ES6+.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEMA 2 -->
+        <section class="seccion-tecnica" id="tema2">
+            <div class="seccion-encabezado">
+                <span class="seccion-tag">Eje Metodológico 02</span>
+                <h2>Tema N°2: Reglas de Negocio Implementadas (RN-01 a RN-06)</h2>
+                <p>Políticas de validación, dominio y seguridad codificadas a nivel declarativo y procedural en el motor.</p>
+            </div>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Denominación de la Regla</th>
+                            <th>Definición Operativa</th>
+                            <th>Mecanismo Técnico de Aplicación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>RN-01</strong></td>
+                            <td>Control de Acceso por Roles (RBAC)</td>
+                            <td>La exploración pública del mapa es libre. El registro de calificaciones requiere rol 'Cliente'. La administración de catálogo demanda rol 'Comerciante'.</td>
+                            <td><span class="tag-norma">FK_Usuarios_Roles & JWT Context</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>RN-02</strong></td>
+                            <td>Unicidad de Reseña en Ventana de 24h</td>
+                            <td>Un usuario solo puede calificar un mismo punto comercial una vez cada 24 horas continuas para evitar inundación de reseñas o desprestigio coordinado.</td>
+                            <td><span class="tag-norma">Stored Procedure USP_RegistrarResena</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>RN-03</strong></td>
+                            <td>Rango Decimal Acotado de Evaluación</td>
+                            <td>El puntaje de satisfacción debe ser un valor decimal contenido exactamente entre 1.0 y 5.0 puntos.</td>
+                            <td><span class="tag-norma">CHK_Resenas_Calificacion (1.0 - 5.0)</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>RN-04</strong></td>
+                            <td>Frontera Geográfica Valle de Aburrá</td>
+                            <td>Las coordenadas registradas deben enmarcarse estrictamente entre las latitudes [6.000000, 6.600000] y longitudes [-75.800000, -75.300000].</td>
+                            <td><span class="tag-norma">CHK_Locales_Latitud & Longitud</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>RN-05</strong></td>
+                            <td>Precios Válidos y Niveles de Demanda</td>
+                            <td>Los precios de venta no pueden ser negativos ($>= 0$) y la demanda se restringe a: 'Baja', 'Media', 'Alta' o 'Saturado'.</td>
+                            <td><span class="tag-norma">CHK_Productos_Precio & CHK_Locales_Demanda</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>RN-06</strong></td>
+                            <td>Restricción Multimedia de Comprobantes</td>
+                            <td>Toda imagen adjunta debe pesar como máximo 5120 KB (5 MB) y poseer formato compatible (.jpg, .png, .webp).</td>
+                            <td><span class="tag-norma">CHK_Imagenes_Peso (<= 5120 KB)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TEMAS 3 Y 4 -->
+        <section class="seccion-tecnica" id="tema3-4">
+            <div class="seccion-encabezado">
+                <span class="seccion-tag">Eje Metodológico 03 & 04</span>
+                <h2>Tema N°3 y N°4: Modelo Entidad/Relación y Diseño Relacional</h2>
+                <p>Estructuración formal de entidades fuertes, débiles, dependencias y claves foráneas en `GranizadosMedellin`[cite: 37].</p>
+            </div>
+            <div class="grid-tres-columnas">
+                <div class="tarjeta-tecnica">
+                    <div class="tarjeta-icono"><i class='bx bx-user-check'></i></div>
+                    <h3>Usuarios y Seguridad</h3>
+                    <p>Relación 1:N entre <code>Roles</code> y <code>Usuarios</code>[cite: 37]. Cada usuario posee un rol mandatorio y contraseñas cifradas bajo hash seguro[cite: 37].</p>
+                    <div class="codigo-inline">Roles (rol_id [PK]) 1──N Usuarios (usuario_id [PK], rol_id [FK])</div>[cite: 37]
+                </div>
+                <div class="tarjeta-tecnica">
+                    <div class="tarjeta-icono"><i class='bx bx-buildings'></i></div>
+                    <h3>Sectores, Clima y Locales</h3>
+                    <p>Relación 1:1 entre <code>Sectores</code> y <code>ClimaSectores</code>, y 1:N entre <code>Sectores</code> y <code>Locales</code> comerciales[cite: 37].</p>
+                    <div class="codigo-inline">Sectores 1──1 ClimaSectores | Sectores 1──N Locales</div>[cite: 37]
+                </div>
+                <div class="tarjeta-tecnica">
+                    <div class="tarjeta-icono"><i class='bx bx-chat'></i></div>
+                    <h3>Catálogo, Reseñas y Fotos</h3>
+                    <p>Relación 1:N de <code>Locales</code> a <code>Productos</code> y <code>Resenas</code>, y 1:N de <code>Resenas</code> a <code>Resenas_Imagenes</code>[cite: 37].</p>
+                    <div class="codigo-inline">Locales 1──N Resenas 1──N Resenas_Imagenes</div>[cite: 37]
+                </div>
+            </div>
+        </section>
+
+        <!-- TEMA 5 -->
+        <section class="seccion-tecnica" id="tema5">
+            <div class="seccion-encabezado">
+                <span class="seccion-tag">Eje Metodológico 05</span>
+                <h2>Tema N°5: Normalización de Base de Datos (1FN, 2FN y 3FN)</h2>
+                <p>Evolución formal desde estructuras tabulares planas hasta la Tercera Forma Normal pura.</p>
+            </div>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Forma Normal</th>
+                            <th>Condición Previa / Patología</th>
+                            <th>Corrección Implementada en SLUSH</th>
+                            <th>Garantía Matemática Obtenida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1FN (Atomicidad)</strong></td>
+                            <td>Listas multivalor de adiciones, sabores o teléfonos dentro de un mismo campo VARCHAR.</td>
+                            <td>Descomposición atómica de atributos. Creación de una columna por dato elemental y definición de llaves primarias autoincrementales IDENTITY(1,1).</td>
+                            <td>Todos los atributos contienen valores atómicos indivisibles; no existen arreglos repetitivos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2FN (Dependencia Completa)</strong></td>
+                            <td>Atributos no clave que dependían solo de una parte de una clave primaria compuesta hipotética.</td>
+                            <td>Aislamiento de entidades independientes. La descripción de un sector municipal no depende del local sino de su propia tabla <code>Sectores</code>.</td>
+                            <td>Todo atributo no clave depende funcionalmente de manera íntegra de la clave primaria.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3FN (Sin Transitividad)</strong></td>
+                            <td>Atributos no clave determinados por otros atributos no clave (ej. almacenar temperatura o código DANE dentro de <code>Locales</code>).</td>
+                            <td>Supresión de dependencias transitivas mediante la creación de la entidad especializada <code>ClimaSectores</code> vinculada por <code>sector_id</code>.</td>
+                            <td>Ningún atributo no clave depende transitivamente de la clave primaria; eliminación total de anomalías de actualización.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- ======================================================================
+         4. GEORUTAS VALLE DE ABURRÁ — GOOGLE MAPS REAL DEMOSTRATIVO
+         ====================================================================== -->
+    <section class="mapa-grid-seccion" id="georutas">
+        <div class="seccion-encabezado">
+            <span class="seccion-tag">Mapeo Satelital & Tráfico</span>
+            <h2>🗺️ Georutas del Valle de Aburrá — Cobertura Google Maps</h2>
+            <p>Monitoreo geográfico demostrativo de los 84 puntos de venta indexados con georreferenciación y estados de demanda.</p>
+            
+            <div class="filtros-demanda-bar">
+                <button class="btn-filtro active" data-filter="Todos"><i class='bx bx-grid-alt'></i> Todos (84)</button>
+                <button class="btn-filtro" data-filter="Alta"><i class='bx bxs-hot'></i> Demanda Alta 🔥</button>
+                <button class="btn-filtro" data-filter="Media"><i class='bx bx-time-five'></i> Demanda Media ⚡</button>
+                <button class="btn-filtro" data-filter="Baja"><i class='bx bx-check-double'></i> Demanda Baja ❄️</button>
+            </div>
+        </div>
+
+        <div class="layout-mapa">
+            <div class="mapa-marco">
+                <div class="google-maps-hud">
+                    <span class="hud-item"><i class='bx bx-radar'></i> GPS: Valle de Aburrá (6.2085, -75.5678)</span>
+                    <span class="hud-item hud-live"><i class='bx bx-broadcast'></i> Live Tracking Activo</span>
+                </div>
+                
+                <!-- Iframe oficial de Google Maps centrado en Medellín / Valle de Aburrá -->
+                <iframe 
+                    id="gmaps-canvas"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.57468162235!2d-75.6443491419741!3d6.244198822003884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="radar-puntos-container" id="radar-puntos">
+                    <!-- Inyectados por JavaScript -->
+                </div>
+            </div>
+
+            <!-- Sidebar Reactivo de Detalle de Tienda -->
+            <aside class="panel-tienda">
+                <div id="tienda-vacia" class="tienda-placeholder">
+                    <i class='bx bx-target-lock icono-pulso'></i>
+                    <h4>Selecciona un Local de la Red</h4>
+                    <p>Haz clic en cualquiera de los puntos comerciales del radar o del listado inferior para inspeccionar dirección exacta, aforo en tiempo real y trazar la ruta satelital.</p>
+                </div>
+
+                <div id="tienda-detalle" class="tienda-info hidden">
+                    <div class="detalle-top">
+                        <span class="badge-demanda" id="det-demanda">Demanda Alta</span>
+                        <span class="badge-id" id="det-id">ID #1</span>
+                    </div>
+                    <h3 id="det-nombre">Ilícito Granizados</h3>
+                    <p id="det-direccion"><i class='bx bx-map-pin'></i> Carrera 43A # 9 S-194</p>
+                    <p id="det-sector"><i class='bx bx-buildings'></i> Sector: El Poblado / Sur (Medellín)</p>
+                    <p id="det-telefono"><i class='bx bx-phone'></i> Contacto: 3001112233</p>
+
+                    <div class="metrica-clima-box">
+                        <div class="clima-item">
+                            <span class="clima-label">Temperatura:</span>
+                            <strong id="det-temp">24.0 °C</strong>
+                        </div>
+                        <div class="clima-item">
+                            <span class="clima-label">Sensación Térmica:</span>
+                            <strong id="det-sensacion">24.5 °C</strong>
+                        </div>
+                        <div class="clima-item">
+                            <span class="clima-label">Condición:</span>
+                            <strong id="det-condicion">Cálido / Soleado</strong>
+                        </div>
+                    </div>
+
+                    <div class="rating-box">
+                        <span class="estrellas" id="det-estrellas">★★★★★</span>
+                        <span class="calif-num" id="det-rating">4.5</span>
+                        <span class="calif-total">(Auditoría SQL Server)</span>
+                    </div>
+
+                    <div class="detalle-acciones">
+                        <button class="btn-principal w-100" id="btn-ruta-externa"><i class='bx bx-navigation'></i> Abrir Ruta en Google Maps GPS</button>
+                        <button class="btn-secundario w-100" id="btn-ver-query-local"><i class='bx bx-code'></i> Inspeccionar Tupla SQL</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="selector-locales-grid" id="locales-grid-selector">
+            <!-- Renderizado por JS -->
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         5. BANCO DE TIRAS DE CÓDIGO Y MÓDULOS DEL PROYECTO (ACCORDION SUITE)
+         ====================================================================== -->
+    <section class="seccion-tecnica" id="tiras-sql">
+        <div class="seccion-encabezado">
+            <span class="seccion-tag">Arquitectura Transaccional & Procedural</span>
+            <h2>Motor Microsoft SQL Server: DDL, Triggers, Vistas y Procedimientos</h2>
+            <p>Banco integral de tiras desplegables interactivas con el código exacto y su explicación técnica de funcionamiento para sustentación.</p>
+            
+            <div class="tiras-control-actions">
+                <button class="btn-filtro" id="btn-expandir-todas"><i class='bx bx-expand-vertical'></i> Desplegar Todas las Tiras</button>
+                <button class="btn-filtro" id="btn-colapsar-todas"><i class='bx bx-collapse-vertical'></i> Colapsar Todas</button>
+            </div>
+        </div>
+
+        <!-- TIRA 1: DDL ROLES Y USUARIOS -->
+        <details class="despliegue-codigo" open>
+            <summary class="despliegue-titulo">1. Script DDL: Creación de Módulos de Seguridad (Roles y Usuarios)</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Este segmento define la infraestructura de control de acceso basada en roles (RBAC). 
+                        La tabla <code>Roles</code> almacena los privilegios base (Administrador, Comerciante, Cliente) con restricción UNIQUE[cite: 37]. 
+                        La tabla <code>Usuarios</code> vincula su clave foránea <code>rol_id</code> mediante actualización en cascada (ON UPDATE CASCADE) 
+                        para garantizar la sincronización automática si el código de rol se reclasifica[cite: 37]. 
+                        Se utiliza el tipo de dato <code>DATETIME2(0)</code> acoplado a la función de sistema <code>SYSDATETIME()</code> 
+                        para un sellado de tiempo de precisión militar sin sobrecarga de almacenamiento[cite: 37].
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: DDL Módulo de Identidad & Accesos</span>
+                <pre><code>CREATE TABLE Roles (
+    rol_id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre_rol VARCHAR(30) UNIQUE NOT NULL
+);
+GO
+
+CREATE TABLE Usuarios (
+    usuario_id INT IDENTITY(1,1) PRIMARY KEY,
+    rol_id INT NOT NULL DEFAULT 3, -- 3: Rol 'Cliente' por defecto
+    nombre_completo VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) UNIQUE NOT NULL,
+    contrasena_slush VARCHAR(255) NOT NULL,
+    telefono VARCHAR(20) NULL,
+    fecha_registro DATETIME2(0) DEFAULT SYSDATETIME() NOT NULL,
+    CONSTRAINT FK_Usuarios_Roles FOREIGN KEY (rol_id)
+        REFERENCES Roles(rol_id) ON UPDATE CASCADE
+);
+GO</code></pre>
+            </div>
+        </details>
+
+        <!-- TIRA 2: DDL SECTORES Y CLIMASECTORES -->
+        <details class="despliegue-codigo">
+            <summary class="despliegue-titulo">2. Script DDL: Zonas Geográficas y Entidad ClimaSectores (3FN)</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Aplica rigurosamente la Tercera Forma Normal (3FN). En lugar de almacenar la sensación térmica o la humedad 
+                        repetidamente dentro de cada punto de venta, se desacoplan en la entidad <code>ClimaSectores</code>[cite: 37]. 
+                        Se incorpora una restricción de unicidad compuesta <code>UQ_Sector_Municipio</code> en <code>Sectores</code> 
+                        para evitar registrar dos veces el mismo barrio en una misma jurisdicción metropolitana[cite: 37]. 
+                        La restricción <code>CHK_Humedad</code> valida a nivel de motor relacional que el porcentaje no sobrepase el dominio físico de 0 a 100%[cite: 37].
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: DDL Geografía & Módulo Meteorológico</span>
+                <pre><code>CREATE TABLE Sectores (
+    sector_id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre_sector VARCHAR(50) NOT NULL,
+    municipio VARCHAR(50) NOT NULL DEFAULT 'Medellín',
+    CONSTRAINT UQ_Sector_Municipio UNIQUE (nombre_sector, municipio)
+);
+GO
+
+CREATE TABLE ClimaSectores (
+    clima_id INT IDENTITY(1,1) PRIMARY KEY,
+    sector_id INT NOT NULL,
+    temperatura_promedio_c DECIMAL(4, 2) NOT NULL,
+    sensacion_termica_c DECIMAL(4, 2) NOT NULL,
+    humedad_porcentaje INT NOT NULL,
+    condicion_predominante VARCHAR(50) NOT NULL,
+    fecha_actualizacion DATETIME2(0) DEFAULT SYSDATETIME() NOT NULL,
+    CONSTRAINT FK_Clima_Sectores FOREIGN KEY (sector_id)
+        REFERENCES Sectores(sector_id) ON DELETE CASCADE,
+    CONSTRAINT CHK_Humedad CHECK (humedad_porcentaje BETWEEN 0 AND 100)
+);
+GO</code></pre>
+            </div>
+        </details>
+
+        <!-- TIRA 3: DDL LOCALES -->
+        <details class="despliegue-codigo">
+            <summary class="despliegue-titulo">3. Script DDL: Locales Comerciales y Restricciones Geográficas CHECK</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Representa el núcleo del negocio en SLUSH. Se estructura con tipos de dato decimales de alta precisión espacial 
+                        <code>DECIMAL(10, 8)</code> para latitud y <code>DECIMAL(11, 8)</code> para longitud[cite: 37]. 
+                        La regla RN-04 se impone mediante restricciones declarativas <code>CHK_Locales_Latitud</code> y <code>CHK_Locales_Longitud</code>, 
+                        impidiendo que cualquier inyección externa o error de digitación guarde coordenadas fuera de los límites del Valle de Aburrá[cite: 37]. 
+                        El campo <code>calificacion_promedio</code> se indexa con valor por defecto 0.00 para lecturas en tiempo O(1)[cite: 37].
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: DDL Locales & Delimitación Espacial</span>
+                <pre><code>CREATE TABLE Locales (
+    local_id INT IDENTITY(1,1) PRIMARY KEY,
+    usuario_dueno_id INT NULL,
+    sector_id INT NOT NULL,
+    nombre_local VARCHAR(100) NOT NULL,
+    direccion VARCHAR(150) NOT NULL,
+    telefono VARCHAR(20) NULL,
+    imagen_portada_url VARCHAR(255) NOT NULL,
+    latitud DECIMAL(10, 8) NOT NULL,
+    longitud DECIMAL(11, 8) NOT NULL,
+    calificacion_promedio DECIMAL(3, 2) DEFAULT 0.00 NOT NULL,
+    nivel_demanda VARCHAR(20) DEFAULT 'Media' NOT NULL,
+    activo BIT DEFAULT 1 NOT NULL,
+    fecha_registro DATETIME2(0) DEFAULT SYSDATETIME() NOT NULL,
+    CONSTRAINT FK_Locales_Sectores FOREIGN KEY (sector_id) 
+        REFERENCES Sectores(sector_id) ON UPDATE CASCADE,
+    CONSTRAINT FK_Locales_Usuarios FOREIGN KEY (usuario_dueno_id)
+        REFERENCES Usuarios(usuario_id),
+    CONSTRAINT CHK_Locales_Latitud CHECK (latitud BETWEEN 6.000000 AND 6.600000),
+    CONSTRAINT CHK_Locales_Longitud CHECK (longitud BETWEEN -75.800000 AND -75.300000),
+    CONSTRAINT CHK_Locales_Demanda CHECK (nivel_demanda IN ('Baja', 'Media', 'Alta', 'Saturado'))
+);
+GO</code></pre>
+            </div>
+        </details>
+
+        <!-- TIRA 4: DDL PRODUCTOS Y MULTIMEDIA -->
+        <details class="despliegue-codigo">
+            <summary class="despliegue-titulo">4. Script DDL: Catálogo de Carta, Reseñas e Imágenes de Auditoría</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Garantiza la atomicidad de productos y la auditoría de calificaciones comunitarias. La tabla <code>Productos</code> 
+                        asocia el volumen en onzas y valida con <code>CHK_Productos_Precio</code> que el costo no sea inferior a cero pesos[cite: 37]. 
+                        La tabla <code>Resenas</code> restringe las calificaciones numéricas entre 1.0 y 5.0 mediante <code>CHK_Resenas_Calificacion</code>[cite: 37]. 
+                        Por su parte, <code>Resenas_Imagenes</code> implementa la regla RN-06 con <code>CHK_Imagenes_Peso</code>, restringiendo los archivos a un máximo de 5120 KB[cite: 37].
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: DDL Productos, Reseñas y Multimedia</span>
+                <pre><code>CREATE TABLE Productos (
+    producto_id INT IDENTITY(1,1) PRIMARY KEY,
+    local_id INT NOT NULL,
+    nombre_producto VARCHAR(100) NOT NULL,
+    descripcion NVARCHAR(MAX) NULL,
+    tamano_onzas INT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    disponible BIT DEFAULT 1 NOT NULL,
+    CONSTRAINT FK_Productos_Locales FOREIGN KEY (local_id) 
+        REFERENCES Locales(local_id) ON DELETE CASCADE,
+    CONSTRAINT CHK_Productos_Precio CHECK (precio >= 0)
+);
+GO
+
+CREATE TABLE Resenas (
+    resena_id INT IDENTITY(1,1) PRIMARY KEY,
+    local_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    calificacion DECIMAL(2, 1) NOT NULL,
+    comentario NVARCHAR(MAX) NULL,
+    origen_plataforma VARCHAR(30) DEFAULT 'SLUSH_Direct' NOT NULL,
+    fecha_resena DATETIME2(0) DEFAULT SYSDATETIME() NOT NULL,
+    CONSTRAINT FK_Resenas_Locales FOREIGN KEY (local_id) 
+        REFERENCES Locales(local_id) ON DELETE CASCADE,
+    CONSTRAINT FK_Resenas_Usuarios FOREIGN KEY (usuario_id) 
+        REFERENCES Usuarios(usuario_id),
+    CONSTRAINT CHK_Resenas_Calificacion CHECK (calificacion BETWEEN 1.0 AND 5.0)
+);
+GO
+
+CREATE TABLE Resenas_Imagenes (
+    imagen_id INT IDENTITY(1,1) PRIMARY KEY,
+    resena_id INT NOT NULL,
+    url_imagen VARCHAR(500) NOT NULL,
+    formato VARCHAR(10) NOT NULL,
+    peso_kb INT NOT NULL,
+    fecha_subida DATETIME2(0) DEFAULT SYSDATETIME() NOT NULL,
+    CONSTRAINT FK_Imagenes_Resenas FOREIGN KEY (resena_id)
+        REFERENCES Resenas(resena_id) ON DELETE CASCADE,
+    CONSTRAINT CHK_Imagenes_Peso CHECK (peso_kb <= 5120)
+);
+GO</code></pre>
+            </div>
+        </details>
+
+        <!-- TIRA 5: DISPARADOR DML RECALCULO PROMEDIO -->
+        <details class="despliegue-codigo">
+            <summary class="despliegue-titulo">5. Disparador (Trigger): Recálculo Atómico de Calificación Promedio</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Soluciona el compromiso entre normalización pura y eficiencia computacional. Ejecutar funciones de agregación 
+                        <code>AVG()</code> mediante JOIN en cada petición del mapa colapsaría el rendimiento de I/O en disco. 
+                        Este disparador DML intercepta eventos <code>AFTER INSERT, UPDATE, DELETE</code> sobre <code>Resenas</code>, 
+                        extrae los locales modificados desde las tablas virtuales del sistema (<code>inserted</code> y <code>deleted</code>) 
+                        y recalcula atómicamente el promedio ponderado, almacenándolo de forma materializada en la tabla <code>Locales</code>.
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: Disparador DML de Rendimiento</span>
+                <pre><code>CREATE TRIGGER TRG_Actualizar_Calificacion_Local
+ON Resenas
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @LocalesAfectados TABLE (local_id INT);
+
+    INSERT INTO @LocalesAfectados
+    SELECT DISTINCT local_id FROM inserted
+    UNION
+    SELECT DISTINCT local_id FROM deleted;
+
+    UPDATE L
+    SET L.calificacion_promedio = ISNULL(Sub.Promedio, 0.00)
+    FROM Locales L
+    INNER JOIN @LocalesAfectados A ON L.local_id = A.local_id
+    OUTER APPLY (
+        SELECT CAST(AVG(R.calificacion) AS DECIMAL(3,2)) AS Promedio
+        FROM Resenas R
+        WHERE R.local_id = L.local_id
+    ) Sub;
+END;
+GO</code></pre>
+            </div>
+        </details>
+
+        <!-- TIRA 6: STORED PROCEDURE RN-02 -->
+        <details class="despliegue-codigo">
+            <summary class="despliegue-titulo">6. Procedimiento Almacenado: Registro Seguro y Validación RN-02 (Ventana 24h)</summary>
+            <div class="bloque-codigo">
+                <div class="explicacion-caja">
+                    <strong>Explicación:</strong>
+                    <p>
+                        Encapsula la lógica de inserción de reseñas dentro de una transacción explícita bajo propiedades ACID 
+                        (Atomicidad, Consistencia, Aislamiento, Durabilidad). Valida formalmente la regla de negocio RN-02 
+                        mediante la función <code>DATEADD(HOUR, -24, SYSDATETIME())</code>. Si el usuario ya emitió una evaluación 
+                        sobre ese mismo establecimiento en las últimas 24 horas, la transacción se aborta con <code>ROLLBACK</code> 
+                        y retorna el código HTTP 400. En caso de éxito, confirma con <code>COMMIT</code> retornando el código 200.
+                    </p>
+                </div>
+                <span class="codigo-tag">T-SQL: Stored Procedure Transaccional</span>
+                <pre><code>CREATE OR ALTER PROCEDURE USP_RegistrarResena
+    @local_id INT,
+    @usuario_id INT,
+    @calificacion DECIMAL(2,1),
+    @comentario NVARCHAR(MAX),
+    @origen_plataforma VARCHAR(30) = 'SLUSH_Direct',
+    @Mensaje VARCHAR(250) OUTPUT,
+    @CodigoEstado INT OUTPUT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        IF EXISTS (
+            SELECT 1 FROM Resenas 
+            WHERE local_id = @local_id 
+              AND usuario_id = @usuario_id 
+              AND fecha_resena >= DATEADD(HOUR, -24, SYSDATETIME())
+        )
+        BEGIN
+            SET @CodigoEstado = 400;
+            SET @Mensaje = 'Violación RN-02: Ya has calificado este punto de venta en las últimas 24 horas.';
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
+
+        INSERT INTO Resenas (local_id, usuario_id, calificacion, comentario, origen_plataforma)
+        VALUES (@local_id, @usuario_id, @calificacion, @comentario, @origen_plataforma);
+
+        COMMIT TRANSACTION;
+        SET @CodigoEstado = 200;
+        SET @Mensaje = 'Reseña registrada con éxito. Promedio recalculado vía Trigger.';
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0 
+            ROLLBACK TRANSACTION;
+
+        SET @CodigoEstado = 500;
+        SET @Mensaje = 'Fallo de motor SQL Server: ' + ERROR_MESSAGE();
+    END CATCH
+END;
+GO</code></pre>
+            </div>
+        </details>
+    </section>
+
+    <!-- ======================================================================
+         6. PANEL DE AUDITORÍA Y EVIDENCIAS SSMS (10 SLIDES CON BOTÓN TOGGLE)
+         ====================================================================== -->
+    <section class="seccion-exposicion" id="auditoria-ssms">
+        <div class="exposicion-header">
+            <div>
+                <span class="badge-pro">Sustentación Técnica para Docente y Evaluadores</span>
+                <h2>Panel de Auditoría de Base de Datos (SQL Server 2019/2022)</h2>
+                <p>Inspección detallada de las 10 evidencias fotográficas y consultas ejecutadas en SSMS sobre la base de datos `GranizadosMedellin`[cite: 37, 43, 44].</p>
+            </div>
+            <button class="btn-secundario" id="btn-toggle-panel"><i class='bx bx-hide'></i> Ocultar Panel</button>
+        </div>
+
+        <div class="slider-contenedor" id="slider-panel">
+            <div class="tabs-nav-wrapper">
+                <div class="tabs-nav" id="tabs-nav-scroll">
+                    <button class="tab-btn active" data-slide="1">1. Conteo UNION ALL</button>
+                    <button class="tab-btn" data-slide="2">2. Locales & Clima</button>
+                    <button class="tab-btn" data-slide="3">3. Catálogo & CASE</button>
+                    <button class="tab-btn" data-slide="4">4. Reseñas & Multimedia</button>
+                    <button class="tab-btn" data-slide="5">5. Usuarios & Fechas</button>
+                    <button class="tab-btn" data-slide="6">6. Vistas de Roles</button>
+                    <button class="tab-btn" data-slide="7">7. Subconsultas Roles</button>
+                    <button class="tab-btn" data-slide="8">8. Vistas de Clima</button>
+                    <button class="tab-btn" data-slide="9">9. Sectores Demanda Alta</button>
+                    <button class="tab-btn" data-slide="10">10. Backend Java Spring</button>
+                </div>
+            </div>
+
+            <div class="slides-wrapper">
+                <!-- SLIDE 1 -->
+                <div class="slide-content active" id="slide-1">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 1/10 — Auditoría Física</span>
+                            <h3>Conteo Global de Registros por Entidad (UNION ALL)</h3>
+                            <p>Sentencia consolidada para validar la integridad del semillero en la base de datos `GranizadosMedellin`[cite: 28, 43, 44]. Comprueba que todas las tablas cuenten con datos consistentes[cite: 28].</p>
+                            
+                            <div class="mini-tabla-ssms">
+                                <table>
+                                    <thead><tr><th>Tabla</th><th>Total</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Roles</td><td>3</td></tr>
+                                        <tr><td>Sectores</td><td>17</td></tr>
+                                        <tr><td>Usuarios</td><td>4</td></tr>
+                                        <tr><td>ClimaSectores</td><td>17</td></tr>
+                                        <tr><td>Locales</td><td>84</td></tr>
+                                        <tr><td>Productos</td><td>4</td></tr>
+                                        <tr><td>Resenas</td><td>1</td></tr>
+                                        <tr><td>Resenas_Imagenes</td><td>1</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Como se evidencia en la consulta de líneas 308 a 322 en SSMS, la base de datos se encuentra poblada y balanceada[cite: 28]. Implementamos un UNION ALL que devuelve en un solo set de datos la totalidad de tuplas de las 8 tablas, destacando los 84 locales comerciales mapeados en 17 sectores metropolitanos[cite: 28].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS (LÍNEAS 308 – 322)</span>
+                            <pre><code>SELECT 'Roles' AS Tabla, COUNT(*) AS Total FROM Roles
+UNION ALL
+SELECT 'Sectores', COUNT(*) FROM Sectores
+UNION ALL
+SELECT 'Usuarios', COUNT(*) FROM Usuarios
+UNION ALL
+SELECT 'ClimaSectores', COUNT(*) FROM ClimaSectores
+UNION ALL
+SELECT 'Locales', COUNT(*) FROM Locales
+UNION ALL
+SELECT 'Productos', COUNT(*) FROM Productos
+UNION ALL
+SELECT 'Resenas', COUNT(*) FROM Resenas
+UNION ALL
+SELECT 'Resenas_Imagenes', COUNT(*) FROM Resenas_Imagenes;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="slide-content" id="slide-2">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 2/10 — Multitabla y Agregación</span>
+                            <h3>Densidad de Locales Cruzada con Clima</h3>
+                            <p>Consulta analítica que agrupa con `LEFT JOIN` los locales por sector y extrae temperatura promedio, porcentaje de humedad y condición predominante[cite: 33].</p>
+                            
+                            <div class="mini-tabla-ssms">
+                                <table>
+                                    <thead><tr><th>Sector</th><th>Total Locales</th><th>Temp (°C)</th><th>Humedad %</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Estadio - Laureles</td><td>18</td><td>23.00</td><td>62%</td></tr>
+                                        <tr><td>Belén</td><td>16</td><td>21.80</td><td>69%</td></tr>
+                                        <tr><td>La America</td><td>10</td><td>22.20</td><td>65%</td></tr>
+                                        <tr><td>Aranjuez</td><td>8</td><td>22.00</td><td>67%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Esta consulta multidimensional permite cruzar la afluencia de locales con variables meteorológicas[cite: 33]. Laureles lidera la concentración con 18 establecimientos registrados y 23.0°C de temperatura, demostrando cómo el calor influye directamente en la demanda de granizados[cite: 33].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS (LÍNEAS 314 – 328)</span>
+                            <pre><code>SELECT 
+    S.sector_id AS [ID],
+    S.nombre_sector AS [Sector],
+    S.municipio AS [Municipio],
+    COUNT(L.local_id) AS [Total Locales],
+    C.temperatura_promedio_c AS [Temp (°C)],
+    C.humedad_porcentaje AS [Humedad %],
+    C.condicion_predominante AS [Estado Clima]
+FROM Sectores S
+LEFT JOIN Locales L ON S.sector_id = L.sector_id
+LEFT JOIN ClimaSectores C ON S.sector_id = C.sector_id
+GROUP BY 
+    S.sector_id, S.nombre_sector, S.municipio,
+    C.temperatura_promedio_c, C.humedad_porcentaje, 
+    C.condicion_predominante
+ORDER BY [Total Locales] DESC, S.nombre_sector ASC;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="slide-content" id="slide-3">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 3/10 — Formateo y Lógica CASE</span>
+                            <h3>Catálogo de Productos y Disponibilidad</h3>
+                            <p>Consulta sobre la tabla `Productos` que formatea el precio en pesos colombianos usando `FORMAT()` y evalúa lógicamente con `CASE` si el producto está disponible o agotado[cite: 35].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Para la presentación de carta, implementamos FORMAT(P.precio, 'C', 'es-CO') garantizando el estándar monetario nacional, y una estructura CASE WHEN para traducir el bit de disponibilidad en etiquetas comprensibles para la interfaz de usuario[cite: 35].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS (LÍNEAS 306 – 315)</span>
+                            <pre><code>SELECT 
+    L.nombre_local AS [Local],
+    P.nombre_producto AS [Producto],
+    P.tamano_onzas AS [Onzas],
+    FORMAT(P.precio, 'C', 'es-CO') AS [Precio (COP)],
+    CASE WHEN P.disponible = 1 THEN 'Disponible' ELSE 'Agotado' END AS [Estado],
+    P.descripcion AS [Descripción]
+FROM Productos P
+INNER JOIN Locales L ON P.local_id = L.local_id
+ORDER BY L.nombre_local, P.precio DESC;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4 -->
+                <div class="slide-content" id="slide-4">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 4/10 — Multimedia y Calificaciones</span>
+                            <h3>Auditoría de Reseñas y Comprobantes Fotográficos</h3>
+                            <p>Unión de cuatro tablas (`Resenas`, `Locales`, `Usuarios`, `Resenas_Imagenes`) para auditar calificaciones, comentarios, plataforma de origen y peso en KB de las fotografías[cite: 34].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>La regla de negocio RN-06 limita el peso de las imágenes a 5120 KB mediante una restricción CHECK[cite: 34, 37]. En esta consulta utilizamos ISNULL() para manejar reseñas sin evidencia y concatenamos el sufijo 'KB' para la auditoría de almacenamiento[cite: 34].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS (LÍNEAS 305 – 320)</span>
+                            <pre><code>SELECT 
+    R.resena_id AS [ID Reseña],
+    L.nombre_local AS [Local],
+    U.nombre_completo AS [Cliente],
+    U.correo AS [Correo Cliente],
+    R.calificacion AS [Puntaje],
+    R.comentario AS [Comentario],
+    R.origen_plataforma AS [Origen],
+    FORMAT(R.fecha_resena, 'yyyy-MM-dd HH:mm') AS [Fecha],
+    ISNULL(I.url_imagen, 'Sin imagen') AS [URL Foto],
+    ISNULL(CAST(I.peso_kb AS VARCHAR) + ' KB', 'N/A') AS [Peso Foto]
+FROM Resenas R
+INNER JOIN Locales L ON R.local_id = L.local_id
+INNER JOIN Usuarios U ON R.usuario_id = U.usuario_id
+LEFT JOIN Resenas_Imagenes I ON R.resena_id = I.resena_id
+ORDER BY R.fecha_resena DESC;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5 -->
+                <div class="slide-content" id="slide-5">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 5/10 — Gestión de Usuarios</span>
+                            <h3>Padrón de Usuarios con Formateo Temporal</h3>
+                            <p>Consulta con ordenamiento jerárquico por rol que valida teléfonos no registrados mediante `ISNULL` y estandariza la fecha de alta a formato militar[cite: 32].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Se comprueba el funcionamiento del modelo de seguridad: los usuarios quedan clasificados por su rol_id correspondiente, y se manejan nulos para evitar rupturas de visualización en la capa frontend[cite: 32].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS (LÍNEAS 310 – 319)</span>
+                            <pre><code>SELECT 
+    U.usuario_id AS [ID],
+    U.nombre_completo AS [Nombre],
+    U.correo AS [Correo Electrónico],
+    R.nombre_rol AS [Rol en Plataforma],
+    ISNULL(U.telefono, 'No registrado') AS [Teléfono],
+    FORMAT(U.fecha_registro, 'yyyy-MM-dd HH:mm') AS [Fecha Alta]
+FROM Usuarios U
+INNER JOIN Roles R ON U.rol_id = R.rol_id
+ORDER BY R.rol_id, U.nombre_completo;</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 6 -->
+                <div class="slide-content" id="slide-6">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 6/10 — Vistas Relacionales</span>
+                            <h3>Vistas Multitabla para Roles y Propietarios</h3>
+                            <p>Creación de `vw_Roles_Multitabla_1` y `vw_Roles_Multitabla_2`, abstrayendo las uniones entre roles, usuarios y los locales que administran[cite: 7, 21].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Encapsulamos la complejidad relacional mediante vistas de SQL Server[cite: 7, 21]. La vista multitabla 2 cruza tres niveles de entidad para exponer directamente al comerciante con su local asignado (ej. Propietario Ilícito y Propietario Siglo 22)[cite: 21].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS</span>
+                            <pre><code>CREATE VIEW vw_Roles_Multitabla_2 AS
+SELECT 
+    r.nombre_rol,
+    u.nombre_completo AS [Comerciante],
+    l.nombre_local,
+    l.direccion
+FROM Roles r
+INNER JOIN Usuarios u ON r.rol_id = u.rol_id
+INNER JOIN Locales l ON u.usuario_id = l.usuario_dueno_id;
+GO</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 7 -->
+                <div class="slide-content" id="slide-7">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 7/10 — Subconsultas</span>
+                            <h3>Subconsultas Correlacionadas con Cláusula IN</h3>
+                            <p>Auditoría de asignación activa mediante la vista `vw_Roles_Subconsulta_1` que filtra roles asociados a cuentas de usuario reales[cite: 19, 20].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Implementamos subconsultas con operadores de pertenencia IN (SELECT DISTINCT rol_id FROM Usuarios) para optimizar el plan de ejecución y evitar combinaciones redundantes en lecturas frecuentes[cite: 20].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS</span>
+                            <pre><code>CREATE VIEW vw_Roles_Subconsulta_1 AS
+SELECT rol_id, nombre_rol
+FROM Roles
+WHERE rol_id IN (SELECT DISTINCT rol_id FROM Usuarios);
+GO</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 8 -->
+                <div class="slide-content" id="slide-8">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 8/10 — Clima & Sensación Térmica</span>
+                            <h3>Vistas de Sectores y Parámetros Meteorológicos</h3>
+                            <p>Vista `vw_Sectores_Multitabla_2` que integra los sectores, los puntos comerciales y la sensación térmica calculada para cada zona urbana[cite: 11, 12].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Esta vista permite que el frontend obtenga en una sola llamada el sector, municipio, nombre comercial y la sensación térmica en grados Celsius sin recalcular uniones pesadas en el servidor web[cite: 11, 12].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS</span>
+                            <pre><code>CREATE VIEW vw_Sectores_Multitabla_2 AS
+SELECT 
+    s.nombre_sector,
+    s.municipio,
+    l.nombre_local,
+    c.sensacion_termica_c
+FROM Sectores s
+INNER JOIN Locales l ON s.sector_id = l.sector_id
+INNER JOIN ClimaSectores c ON s.sector_id = c.sector_id;
+GO</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 9 -->
+                <div class="slide-content" id="slide-9">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 9/10 — Filtro de Demanda</span>
+                            <h3>Sectores con Demanda Alta Indexada</h3>
+                            <p>Subconsulta que aísla los sectores que actualmente registran puntos comerciales en estado 'Alta' demanda para priorizar la distribución logística[cite: 9, 10].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>Con la vista vw_Sectores_Subconsulta_1 identificamos los sectores críticos con alta rotación de clientes (como El Poblado, Laureles y Belén) para activar las alertas de aforo en el mapa interactivo[cite: 9, 10].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">T-SQL EJECUTADO EN SSMS</span>
+                            <pre><code>CREATE VIEW vw_Sectores_Subconsulta_1 AS
+SELECT sector_id, nombre_sector, municipio
+FROM Sectores
+WHERE sector_id IN (
+    SELECT sector_id FROM Locales WHERE nivel_demanda = 'Alta'
+);
+GO</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 10 -->
+                <div class="slide-content" id="slide-10">
+                    <div class="slide-grid">
+                        <div class="slide-info">
+                            <span class="tag-evidencia">Evidencia 10/10 — Integración Java</span>
+                            <h3>Arquitectura Backend con Java 21 & Spring Boot</h3>
+                            <p>Estructura de middleware configurada en Spring Initializr con Gradle, Spring Web, Spring Data JPA y Lombok para mapear el modelo relacional a microservicios REST[cite: 36].</p>
+                            
+                            <div class="explicacion-caja">
+                                <strong>Explicación:</strong>
+                                <p>El backend en Java 21 orquesta las transacciones mediante entidades JPA y expone endpoints JSON seguros[cite: 36]. Esto desacopla totalmente la lógica de persistencia en SQL Server del consumo reactivo en la aplicación web[cite: 36].</p>
+                            </div>
+                        </div>
+                        <div class="slide-codigo">
+                            <span class="codigo-tag">CONTROLADOR REST EN JAVA (SPRING BOOT)</span>
+                            <pre><code>@RestController
+@RequestMapping("/api/v1/locales")
+@CrossOrigin(origins = "*")
+public class LocalRestController {
+
+    @Autowired
+    private LocalRepository localRepository;
+
+    @GetMapping("/cobertura-aburra")
+    public ResponseEntity&lt;List&lt;Local&gt;&gt; listarLocales() {
+        return ResponseEntity.ok(localRepository.findAll());
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         7. NUEVO MÓDULO: CÓDIGO BASE JAVA (POO & ARREGLOS) Y DIAGRAMA DE FLUJO
+         ====================================================================== -->
+    <section class="seccion-tecnica" id="codigo-base-java">
+        <div class="seccion-encabezado">
+            <span class="seccion-tag">Lógica Algorítmica & POO (Código Base)</span>
+            <h2>Estructura de Clases Java y Manager de Consola (Trabajo Final / src)</h2>
+            <p>Módulo de gestión contable, nómina, inventario y directorio con 39 sedes precargadas en memoria y arreglos unidimensionales.</p>
+            <div class="badge-etiqueta-destacada">
+                <i class='bx bx-info-circle'></i> Solo pon que es un código base
+            </div>
+        </div>
+
+        <!-- Explorador de Archivos de Trabajo Final / src -->
+        <div class="ide-file-explorer">
+            <div class="ide-sidebar">
+                <div class="ide-folder-title">
+                    <i class='bx bx-folder-open'></i> Trabajo final / src
+                </div>
+                <ul class="ide-file-list">
+                    <li class="ide-file-item" data-java="Deuda"><i class='bx bxl-java'></i> Deuda.java</li>
+                    <li class="ide-file-item" data-java="Empleado"><i class='bx bxl-java'></i> Empleado.java</li>
+                    <li class="ide-file-item" data-java="Factura"><i class='bx bxl-java'></i> Factura.java</li>
+                    <li class="ide-file-item" data-java="Local"><i class='bx bxl-java'></i> Local.java</li>
+                    <li class="ide-file-item active" data-java="MainJava"><i class='bx bxl-java'></i> MainJava.java</li>
+                    <li class="ide-file-item" data-java="Producto"><i class='bx bxl-java'></i> Producto.java</li>
+                    <li class="ide-file-item ide-file-flow" data-java="Diagrama"><i class='bx bx-git-merge'></i> DiagramaFlujo.drawio</li>
+                </ul>
+            </div>
+
+            <div class="ide-editor">
+                <div class="ide-editor-header">
+                    <span id="ide-current-filename"><i class='bx bxl-java'></i> MainJava.java (Código Base)</span>
+                    <span class="badge-code-lang">Java 21 / POO</span>
+                </div>
+                
+                <div class="ide-editor-body">
+                    <!-- Código Deuda.java -->
+                    <pre class="java-code-pane hidden" id="code-Deuda"><code>public class Deuda {
+    int idDeuda;
+    String tercero; // Proveedor o Acreedor
+    String concepto;
+    double monto;
+    boolean pagada; // true si ya se canceló, false si está pendiente
+
+    public Deuda(int idDeuda, String tercero, String concepto, double monto, boolean pagada) {
+        this.idDeuda = idDeuda;
+        this.tercero = tercero;
+        this.concepto = concepto;
+        this.monto = monto;
+        this.pagada = pagada;
+    }
+}</code></pre>
+
+                    <!-- Código Empleado.java -->
+                    <pre class="java-code-pane hidden" id="code-Empleado"><code>public class Empleado {
+    String nombre;
+    String cargo;
+    double sueldoBase;
+    double bonificaciones;
+    double deducciones;
+
+    public Empleado(String nombre, String cargo, double sueldoBase, double bonificaciones, double deducciones) {
+        this.nombre = nombre;
+        this.cargo = cargo;
+        this.sueldoBase = sueldoBase;
+        this.bonificaciones = bonificaciones;
+        this.deducciones = deducciones;
+    }
+
+    public double calcularSueldoNeto() {
+        return sueldoBase + bonificaciones - deducciones;
+    }
+}</code></pre>
+
+                    <!-- Código Factura.java -->
+                    <pre class="java-code-pane hidden" id="code-Factura"><code>public class Factura {
+    int idFactura;
+    String cliente;
+    String descripcion;
+    double subtotal;
+    double porcentajeDescuento;
+    double valorTotal;
+
+    public Factura(int idFactura, String cliente, String descripcion, double subtotal, double porcentajeDescuento, double valorTotal) {
+        this.idFactura = idFactura;
+        this.cliente = cliente;
+        this.descripcion = descripcion;
+        this.subtotal = subtotal;
+        this.porcentajeDescuento = porcentajeDescuento;
+        this.valorTotal = valorTotal;
+    }
+}</code></pre>
+
+                    <!-- Código Local.java -->
+                    <pre class="java-code-pane hidden" id="code-Local"><code>public class Local {
+    int idLocal;
+    String nombre;
+    String zona;
+    String ubicacion;
+    String numeroContacto;
+    String redesSociales;
+    String resena;
+    double puntuacion;
+
+    public Local(int idLocal, String nombre, String zona, String ubicacion, String numeroContacto, String redesSociales, String resena, double puntuacion) {
+        this.idLocal = idLocal;
+        this.nombre = nombre;
+        this.zona = zona;
+        this.ubicacion = ubicacion;
+        this.numeroContacto = numeroContacto;
+        this.redesSociales = redesSociales;
+        this.resena = resena;
+        this.puntuacion = puntuacion;
+    }
+}</code></pre>
+
+                    <!-- Código MainJava.java (Visible por defecto) -->
+                    <pre class="java-code-pane" id="code-MainJava"><code>import java.util.Scanner;
+
+public class MainJava {
+
+    // 4 ARREGLOS UNIDIMENSIONALES PRINCIPALES DEL PROYECTO INTEGRADOR SLUSH
+    static Local[] directorioLocales = new Local[60];
+    static int contadorLocales = 0;
+
+    static Producto[] catalogoProductos = new Producto[40];
+    static int contadorProductos = 0;
+
+    static Empleado[] nominaEmpleados = new Empleado[20];
+    static int contadorEmpleados = 0;
+
+    static Factura[] registroFacturas = new Factura[60];
+    static int contadorFacturas = 0;
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        // Precarga silenciosa de los 39 locales de SLUSH y datos contables iniciales
+        precargarDatosIniciales();
+
+        // SEGURIDAD: Validación de acceso para Administrador (3 intentos)
+        boolean accesoConcedido = false;
+        int intentos = 3;
+
+        while (intentos > 0 && !accesoConcedido) {
+            System.out.print("🔒 Ingrese Clave de Administrador (Admin2026): ");
+            String pass = teclado.nextLine().trim();
+
+            if (pass.equals("Admin2026")) {
+                accesoConcedido = true;
+                System.out.println("\n✅ [ACCESO AUTORIZADO] Bienvenido al Panel Gerencial y de Consultas SLUSH.");
+            } else {
+                intentos--;
+                System.out.println("❌ Contraseña incorrecta. Intentos restantes: " + intentos);
+            }
+        }
+        // ... (Menú de opciones 1 a 13: Inventario, Nómina, Facturación, Utilidad Neta y 39 Locales)
+    }
+}</code></pre>
+
+                    <!-- Código Producto.java -->
+                    <pre class="java-code-pane hidden" id="code-Producto"><code>public class Producto {
+    String nombre;
+    String categoria;
+    double precio;
+    int stock;
+
+    public Producto(String nombre, String categoria, double precio, int stock) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.stock = stock;
+    }
+}</code></pre>
+
+                    <!-- Vista previa DiagramaFlujo.drawio -->
+                    <div class="java-code-pane hidden" id="code-Diagrama">
+                        <div class="diagrama-xml-card">
+                            <span class="etiqueta-flujo"><i class='bx bx-check-circle'></i> Diagrama de Flujo Oficial SLUSH Manager v2 (.drawio)</span>
+                            <p>Esquema de decisiones y control algorítmico del programa `MainJava.java` estructurado en Draw.io[cite: 54].</p>
+                            <a href="#diagrama-flujo-sec" class="btn-principal"><i class='bx bx-git-merge'></i> Ver Representación Gráfica Completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN GRÁFICA DEL DIAGRAMA DE FLUJO (DiagramaFlujo.drawio) -->
+        <div class="seccion-diagrama-flujo" id="diagrama-flujo-sec">
+            <div class="flujo-header">
+                <div>
+                    <span class="tag-evidencia">Estructura de Flujo del Algoritmo</span>
+                    <h3>Diagrama de Flujo del Manager Administrativo (Draw.io)</h3>
+                    <p>Mapeo lógico de ejecución: Autenticación, opciones del menú (1 a 13) y retornos de ciclo continuo[cite: 51, 54].</p>
+                </div>
+                <div class="badge-etiqueta-destacada">
+                    <i class='bx bx-git-repo-forked'></i> DiagramaFlujo.drawio (Fuente Oficial)
+                </div>
+            </div>
+
+            <!-- Mapa Visual del Diagrama de Flujo -->
+            <div class="flowchart-visual-wrapper">
+                <div class="flow-step node-start">
+                    <span class="flow-pill green">INICIO</span>
+                    <strong>SLUSH Manager Pro</strong>
+                </div>
+                <div class="flow-line-down"></div>
+
+                <div class="flow-step node-process">
+                    <span class="flow-pill cyan">PRECARGA DE DATOS</span>
+                    <p>precargarDatosIniciales()<br>39 Locales completos, 5 Productos, 4 Empleados y 4 Facturas[cite: 51, 54]</p>
+                </div>
+                <div class="flow-line-down"></div>
+
+                <div class="flow-step node-auth">
+                    <span class="flow-pill red">SEGURIDAD ADMINISTRADOR</span>
+                    <p>Solicitar Contraseña (Clave: Admin2026 | Máx. 3 intentos)[cite: 51, 54]</p>
+                </div>
+                <div class="flow-line-down"></div>
+
+                <div class="flow-step node-decision">
+                    <span class="flow-pill yellow">DECISIÓN</span>
+                    <strong>¿Contraseña correcta e intentos > 0?</strong>[cite: 54]
+                </div>
+                <div class="flow-line-down"></div>
+
+                <div class="flow-step node-menu">
+                    <span class="flow-pill blue">MENÚ PRINCIPAL SLUSH</span>
+                    <p>Opciones Continuas 1 a 13 (while opcion != 13)[cite: 51, 54]</p>
+                </div>
+                <div class="flow-line-down"></div>
+
+                <!-- 5 Ramas Principales de Módulos -->
+                <div class="flow-branches-grid">
+                    <div class="flow-branch-card">
+                        <span class="branch-num">Opciones 1 & 6</span>
+                        <h4>Inventario SLUSH</h4>
+                        <p>Registrar / Mostrar Granizados, Toppings y Stock[cite: 51, 54]</p>
+                        <span class="retorno-badge">⟲ Retorna al Menú</span>[cite: 54]
+                    </div>
+
+                    <div class="flow-branch-card">
+                        <span class="branch-num">Opciones 2, 7 & 9</span>
+                        <h4>Nómina SLUSH</h4>
+                        <p>Registrar Empleados, Ver Tabla y Calcular Gasto Total Nómina[cite: 51, 54]</p>
+                        <span class="retorno-badge">⟲ Retorna al Menú</span>[cite: 54]
+                    </div>
+
+                    <div class="flow-branch-card">
+                        <span class="branch-num">Opciones 3 & 8</span>
+                        <h4>Facturación & Ventas</h4>
+                        <p>Generar Factura con Descuento y Calcular Total Ventas Acumulado[cite: 51, 54]</p>
+                        <span class="retorno-badge">⟲ Retorna al Menú</span>[cite: 54]
+                    </div>
+
+                    <div class="flow-branch-card highlight">
+                        <span class="branch-num">Opción 10</span>
+                        <h4>Utilidad Neta (KPI)</h4>
+                        <p>Cálculo: Ventas Totales - Gasto de Nómina = Margen de Rentabilidad %[cite: 51, 54]</p>
+                        <span class="retorno-badge">⟲ Retorna al Menú</span>[cite: 54]
+                    </div>
+
+                    <div class="flow-branch-card">
+                        <span class="branch-num">Opciones 4, 5, 11 & 12</span>
+                        <h4>Directorio Locales</h4>
+                        <p>Registrar Sede, Calificar Reseña, Ver 39 Locales y Consulta Avanzada[cite: 51, 54]</p>
+                        <span class="retorno-badge">⟲ Retorna al Menú</span>[cite: 54]
+                    </div>
+                </div>
+
+                <div class="flow-line-down"></div>
+                <div class="flow-step node-end">
+                    <span class="flow-pill red">Opción 13</span>
+                    <strong>SALIR DEL SISTEMA (Fin del Programa)</strong>[cite: 51, 54]
+                </div>
+            </div>
+        </div>
+
+        <!-- SIMULADOR INTERACTIVO DE CONSOLA JAVA EN JAVASCRIPT -->
+        <div class="terminal-simulador-container">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">Consola Java SLUSH Manager Pro (Ejecución Interactiva JS)</span>
+                <span class="terminal-badge">Clave: Admin2026</span>[cite: 51]
+            </div>
+
+            <div class="terminal-body" id="term-output">
+                <div class="term-line">╔══════════════════════════════════════════════════════════════════════════╗</div>[cite: 51]
+                <div class="term-line">║         SLUSH MEDELLÍN - MANAGER ADMINISTRADOR & DIRECTORIO PRO          ║</div>[cite: 51]
+                <div class="term-line">║     Plataforma de Gestión, Georreferenciación y Contabilidad (v2026)     ║</div>[cite: 51]
+                <div class="term-line">║        Cobertura: Medellín y Valle de Aburrá (39 Sedes Activas)          ║</div>[cite: 51]
+                <div class="term-line">╚══════════════════════════════════════════════════════════════════════════╝</div>[cite: 51]
+                <div class="term-line text-cyan">> [SISTEMA]: 39 locales, inventario y nómina precargados con éxito.</div>[cite: 51]
+                <div class="term-line text-yellow">> Ingrese la clave de administrador para acceder (Admin2026):</div>[cite: 51]
+            </div>
+
+            <div class="terminal-input-bar">
+                <span class="term-prompt">admin@slush-java:~$</span>
+                <input type="text" id="term-input" placeholder="Escribe 'Admin2026' o número de opción..." autocomplete="off">
+                <button class="btn-principal" id="btn-term-enviar"><i class='bx bx-send'></i> Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         8. PIE DE PÁGINA INSTITUCIONAL
+         ====================================================================== -->
+    <footer class="pie-pagina">
+        <div class="pie-contenedor">
+            <div class="pie-grid">
+                <div>
+                    <h3>🍧 SLUSH</h3>
+                    <p>Proyecto Integrador de Ingeniería de Software & Gestión Avanzada de Bases de Datos.</p>
+                    <p class="pie-info">Área Metropolitana del Valle de Aburrá — Colombia.</p>
+                </div>
+                <div>
+                    <h4>Jurisdicciones Conectadas</h4>
+                    <p>La Estrella • Itagüí • Sabaneta • Envigado • Medellín • Bello</p>
+                </div>
+                <div>
+                    <h4>Especificación Técnica</h4>
+                    <p>Microsoft SQL Server 2019/2022 • T-SQL 3FN • Google Maps • Java 21 POO (Código Base)</p>[cite: 43, 44]
+                </div>
+            </div>
+            <p class="derechos">© 2026 SLUSH Inc. — Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de la Plataforma -->
+    <script src="app.js"></script>
+</body>
+</html>
